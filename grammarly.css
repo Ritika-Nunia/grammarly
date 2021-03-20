@@ -1,0 +1,21 @@
+h1{
+    color: rgb(44, 148, 44);
+    text-align: center;
+    margin-top: 40px;
+}
+
+div{
+    width: 50%;
+    height: auto;
+    margin:auto;
+}
+.files{
+    margin-left: 60px;
+}
+.out{
+    width:50%;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: b;
+}
