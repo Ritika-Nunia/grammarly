@@ -1,0 +1,38 @@
+<html> 
+  
+<head> 
+    <title>Read Text File</title> 
+    <link rel="stylesheet" href="grammarly.css">
+</head> 
+  
+<body> 
+    <h1>SpellChecker</h1>
+    <div class="MyContainer" align="center">
+    <input type="file" class="files" name="file"id="file"> 
+    </div>
+        <div class="out">
+        <p id="filecontent"></p> 
+        </div>
+      
+    <script type="text/javascript"> 
+        document.getElementById('file') 
+            .addEventListener('change', function() { 
+              
+            var fr=new FileReader(); 
+            fr.onload=function(){ 
+                document.getElementById('filecontent') 
+                        .textContent=fr.result; 
+            } 
+              
+            fr.readAsText(this.files[0]); 
+        }) 
+    </script> 
+</body> 
+  
+</html> 
+   
+  
+
+
+
+
