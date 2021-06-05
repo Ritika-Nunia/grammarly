@@ -1,4 +1,6 @@
-function readFile(input) {
+
+
+    function readFile(input) {
         let file = input.files[0];
         
         let reader = new FileReader();
@@ -14,9 +16,9 @@ function readFile(input) {
         console.log(reader.error);
         };
     }
-
-
-function upload(){ 
+    
+    
+    function upload(){ 
     try{
         let inputText= document.getElementById('container').textContent;
         console.log(inputText);
@@ -44,7 +46,7 @@ function upload(){
                             );
                         }
                         $(".suggestion-list").mouseover((event) => {
-                            event.target.style.backgroundColor = "yellow";
+                            event.target.style.backgroundColor = "lightgreen";
                         });
                         $(".suggestion-list").mouseout((event) => {
                             event.target.style.backgroundColor = "";
@@ -73,5 +75,3 @@ function upload(){
         console.error();
     }
     }
-
-    
